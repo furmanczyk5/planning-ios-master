@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016-2017 American Planning Association. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="8" y="418" width="464" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="M5z-lU-duE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.029349599033594131" green="0.25502824783325195" blue="0.51200652122497559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="APA-logo-650" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-gd-pfS">
+                    <rect key="frame" x="162" y="47" width="156" height="156"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="wifi-card-3" translatesAutoresizingMaskIntoConstraints="NO" id="uMj-kK-WJM">
+                    <rect key="frame" x="162" y="227" width="156" height="118"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="156" id="1S1-q8-135"/>
+                        <constraint firstAttribute="width" secondItem="uMj-kK-WJM" secondAttribute="height" multiplier="241:183" id="fwE-pb-jZd"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" red="0.029349599033594131" green="0.25502824783325195" blue="0.51200652122497559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="uMj-kK-WJM" secondAttribute="centerX" id="35L-kJ-hSY"/>
+                <constraint firstItem="1mq-gd-pfS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="47" id="Eay-Ao-6Bk"/>
+                <constraint firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" constant="8" id="F4b-T6-ZHV"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="MfP-vx-nX0"/>
+                <constraint firstAttribute="centerX" secondItem="1mq-gd-pfS" secondAttribute="centerX" id="Vr2-mY-ONJ"/>
+                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstItem="uMj-kK-WJM" firstAttribute="top" secondItem="1mq-gd-pfS" secondAttribute="bottom" constant="24" id="xzN-WO-YEy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="APA-logo-650" width="156" height="156"/>
+        <image name="wifi-card-3" width="682" height="525"/>
+    </resources>
+</document>
